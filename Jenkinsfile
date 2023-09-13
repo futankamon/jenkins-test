@@ -19,7 +19,9 @@ pipeline {
         stage('Run') {
             steps {
                 // Your build and test steps go here
-                node index.js
+                echo 'Running'
+                sh 'echo this is from the shell'
+                sh 'node index.js'
             }
         }
 
