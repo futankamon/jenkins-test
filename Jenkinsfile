@@ -16,6 +16,12 @@ pipeline {
             }
         }
 
-        // Additional stages as necessary...
+        stage('Run') {
+            steps {
+                // Your build and test steps go here
+                node index.js
+            }
+        }
+
     }
 }
